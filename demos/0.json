@@ -1,0 +1,297 @@
+{"end": {
+    "file": null,
+    "comments_before": [],
+    "nlb": false,
+    "endpos": 37,
+    "pos": 36,
+    "col": 12,
+    "line": 2,
+    "value": ";",
+    "type": "punc"
+}, "start": {
+    "file": null,
+    "comments_before": [],
+    "nlb": false,
+    "endpos": 1,
+    "pos": 0,
+    "col": 0,
+    "line": 1,
+    "value": "S",
+    "type": "name"
+}, "body": [
+    {
+        "end": {
+            "file": null,
+            "comments_before": [],
+            "nlb": false,
+            "endpos": 23,
+            "pos": 22,
+            "col": 22,
+            "line": 1,
+            "value": ";",
+            "type": "punc"
+        },
+        "start": {
+            "file": null,
+            "comments_before": [],
+            "nlb": false,
+            "endpos": 1,
+            "pos": 0,
+            "col": 0,
+            "line": 1,
+            "value": "S",
+            "type": "name"
+        },
+        "body": {
+            "end": {
+                "file": null,
+                "comments_before": [],
+                "nlb": false,
+                "endpos": 22,
+                "pos": 21,
+                "col": 21,
+                "line": 1,
+                "value": ")",
+                "type": "punc"
+            },
+            "start": {
+                "file": null,
+                "comments_before": [],
+                "nlb": false,
+                "endpos": 1,
+                "pos": 0,
+                "col": 0,
+                "line": 1,
+                "value": "S",
+                "type": "name"
+            },
+            "args": [
+                {
+                    "end": {
+                        "file": null,
+                        "comments_before": [],
+                        "nlb": false,
+                        "endpos": 17,
+                        "pos": 12,
+                        "col": 12,
+                        "line": 1,
+                        "value": "xxx",
+                        "type": "string"
+                    },
+                    "start": {
+                        "file": null,
+                        "comments_before": [],
+                        "nlb": false,
+                        "endpos": 17,
+                        "pos": 12,
+                        "col": 12,
+                        "line": 1,
+                        "value": "xxx",
+                        "type": "string"
+                    },
+                    "value": "xxx"
+                },
+                {
+                    "end": {
+                        "file": null,
+                        "comments_before": [],
+                        "nlb": false,
+                        "endpos": 21,
+                        "pos": 20,
+                        "col": 20,
+                        "line": 1,
+                        "value": "}",
+                        "type": "punc"
+                    },
+                    "start": {
+                        "file": null,
+                        "comments_before": [],
+                        "nlb": false,
+                        "endpos": 20,
+                        "pos": 19,
+                        "col": 19,
+                        "line": 1,
+                        "value": "{",
+                        "type": "punc"
+                    },
+                    "properties": []
+                }
+            ],
+            "expression": {
+                "end": {
+                    "file": null,
+                    "comments_before": [],
+                    "nlb": false,
+                    "endpos": 11,
+                    "pos": 2,
+                    "col": 2,
+                    "line": 1,
+                    "value": "namespace",
+                    "type": "name"
+                },
+                "start": {
+                    "file": null,
+                    "comments_before": [],
+                    "nlb": false,
+                    "endpos": 1,
+                    "pos": 0,
+                    "col": 0,
+                    "line": 1,
+                    "value": "S",
+                    "type": "name"
+                },
+                "property": "namespace",
+                "expression": {
+                    "end": {
+                        "file": null,
+                        "comments_before": [],
+                        "nlb": false,
+                        "endpos": 1,
+                        "pos": 0,
+                        "col": 0,
+                        "line": 1,
+                        "value": "S",
+                        "type": "name"
+                    },
+                    "start": {
+                        "file": null,
+                        "comments_before": [],
+                        "nlb": false,
+                        "endpos": 1,
+                        "pos": 0,
+                        "col": 0,
+                        "line": 1,
+                        "value": "S",
+                        "type": "name"
+                    },
+                    "name": "S"
+                }
+            }
+        }
+    },
+    {
+        "end": {
+            "file": null,
+            "comments_before": [],
+            "nlb": false,
+            "endpos": 37,
+            "pos": 36,
+            "col": 12,
+            "line": 2,
+            "value": ";",
+            "type": "punc"
+        },
+        "start": {
+            "file": null,
+            "comments_before": [],
+            "nlb": true,
+            "endpos": 25,
+            "pos": 24,
+            "col": 0,
+            "line": 2,
+            "value": "S",
+            "type": "name"
+        },
+        "body": {
+            "end": {
+                "file": null,
+                "comments_before": [],
+                "nlb": false,
+                "endpos": 36,
+                "pos": 35,
+                "col": 11,
+                "line": 2,
+                "value": ")",
+                "type": "punc"
+            },
+            "start": {
+                "file": null,
+                "comments_before": [],
+                "nlb": true,
+                "endpos": 25,
+                "pos": 24,
+                "col": 0,
+                "line": 2,
+                "value": "S",
+                "type": "name"
+            },
+            "args": [
+                {
+                    "end": {
+                        "file": null,
+                        "comments_before": [],
+                        "nlb": false,
+                        "endpos": 35,
+                        "pos": 34,
+                        "col": 10,
+                        "line": 2,
+                        "value": "}",
+                        "type": "punc"
+                    },
+                    "start": {
+                        "file": null,
+                        "comments_before": [],
+                        "nlb": false,
+                        "endpos": 34,
+                        "pos": 33,
+                        "col": 9,
+                        "line": 2,
+                        "value": "{",
+                        "type": "punc"
+                    },
+                    "properties": []
+                }
+            ],
+            "expression": {
+                "end": {
+                    "file": null,
+                    "comments_before": [],
+                    "nlb": false,
+                    "endpos": 32,
+                    "pos": 26,
+                    "col": 2,
+                    "line": 2,
+                    "value": "config",
+                    "type": "name"
+                },
+                "start": {
+                    "file": null,
+                    "comments_before": [],
+                    "nlb": true,
+                    "endpos": 25,
+                    "pos": 24,
+                    "col": 0,
+                    "line": 2,
+                    "value": "S",
+                    "type": "name"
+                },
+                "property": "config",
+                "expression": {
+                    "end": {
+                        "file": null,
+                        "comments_before": [],
+                        "nlb": true,
+                        "endpos": 25,
+                        "pos": 24,
+                        "col": 0,
+                        "line": 2,
+                        "value": "S",
+                        "type": "name"
+                    },
+                    "start": {
+                        "file": null,
+                        "comments_before": [],
+                        "nlb": true,
+                        "endpos": 25,
+                        "pos": 24,
+                        "col": 0,
+                        "line": 2,
+                        "value": "S",
+                        "type": "name"
+                    },
+                    "name": "S"
+                }
+            }
+        }
+    }
+]}
