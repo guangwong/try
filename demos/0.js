@@ -51,3 +51,7 @@ var result = analyze([
 
 console.log(result.join("\n"));
 
+// 输出结果如下：
+// 命中规则 [ S.namespace ] 在第 2 行的第 11 个字符。
+// 命中规则 [ S.namespace ] 在第 3 行的第 4 个字符。
+// 命中规则 [ S.config ] 在第 4 行的第 4 个字符。
