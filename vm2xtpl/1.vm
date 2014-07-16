@@ -1,16 +1,11 @@
 #if($a)
-
-    1
-
-    #if($b)
-        2
-    #else
-        8
-    #end
-
-    3
-
+    if a
+#elseif($b)
+    elif b
+#elseif($c)
+    elif c
+#elseif($d)
+    elif d
 #else
-
-    4
+    last el
 #end

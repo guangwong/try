@@ -29,6 +29,54 @@ function tr(node) {
 
 
     if (_.isArray(node) ) {
+
+
+        /**
+         * if(xxx)
+         * elseif(xxx)
+         * elseif(xxx)
+         * elseif(xxx)
+         * else
+         * end
+         *
+         * if()
+         * else
+             * if
+             * else
+                 * if
+                 * else
+                     * if
+                     * else
+         *
+         *
+         */
+
+        // 预处理 elseif 到 if else 的层级嵌套
+
+            if(node[0].type === "if"){
+
+                var newNode, cur, tmp;
+                newNode = cur = [];
+
+                node.forEach(function(sub){
+                    if(sub.type === "elseif"){
+                        cur.push({type:"else"});
+                        cur.push("\n");
+                        tmp = [];
+                        cur.push(tmp);
+                        cur.push("\n");
+                        cur = tmp;
+                        sub.type = "if";
+                    }
+                    cur.push(sub);
+                });
+
+                node = newNode;
+
+            }
+
+        ////////////////////
+
         var ret = node.map(function(sub, idx){
             var ret = tr(sub);
             if(
@@ -63,10 +111,10 @@ function tr(node) {
     }
 
     if (node.type === "property") {
-        return idTr(node.id);
+        return node.id;
     }
     if (node.type === "method") {
-        return idTr(node.id) + "(" + (node.args||[]).map(function(sub){
+        return node.id + "(" + (node.args||[]).map(function(sub){
             return tr(sub);
         }).join(",") + ")";
     }
@@ -126,6 +174,6 @@ function tr(node) {
 var content = FS.readFileSync("./certResult.vm").toString();
 var ast = Parser.parse(content);
 var out = tr(ast);
-FS.writeFileSync("0.xtpl", out);
+FS.writeFileSync("certResult.xtpl", out);
 
 

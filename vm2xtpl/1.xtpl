@@ -1,71 +1,17 @@
-{{set(certResult=userinfo.CertResult)}}
-{{#if(!userinfo.isAlipayAuth && !userinfo.isBusAuth)}}
-{{#if(certResult && tbStringUtil.bitAND != 32)}}
-<div class="alipay-approve">
-{{#if(certResult.certResult == -1)}}-
-{{elseif(certResult.certResult == 2)}}    {{!通过了认证（商家和个人）}}
-        {{#if(!undefinedcrisp && crisp == "1")}}您已通过{{#if(certResult.certType == 2)}}支付宝商家{{else}}个人实名认证。
-{{elseif(certResult.certResult == 1)}}    {{!通过了身份认证}}
-        {{#if(certResult.userType == 0)}}    {{!简体会员}}
-            {{#if(certResult.certStatus == 0)}}    {{!初始化}}
-                您已通过淘宝个人实名认证，可点击<a
-        href="memberModule.setTarget.addQueryData.addQueryData"
-        target="_blank">升级为支付宝个人实名认证</a>。
-{{elseif(certResult.certStatus == 1)}}    {{!申请中}}
-                您申请的升级支付宝个人实名认证正在审核中，<a
-        href="memberModule.setTarget.addQueryData.addQueryData"
-        target="_blank">点击查看详情</a>。
-{{elseif(certResult.certStatus == 3)}}    {{!失败}}
-                因<b>certResult.reason</b>原因，升级支付宝个人实名认证失败，您可以<a
-        href="memberModule.setTarget.addQueryData.addQueryData"
-        target="_blank">点击重新升级</a>。
-
-{{else}}    {{!繁体会员}}
-            您已通过支付宝{{#if(certResult.certType == 2)}}商家{{else}}个人实名认证。
-
-{{else}}    {{!未通过任何认证}}
-        {{#if(certResult.userType == 0)}}    {{!简体会员}}
-            {{#if(certResult.certStatus == 0)}}    {{!初始化}}
-                请先<a
-        href="memberModule.setTarget.addQueryData.addQueryData"
-        target="_blank">实名认证</a>！
-{{elseif(certResult.certStatus == 1)}}    {{!审核中}}
-                支付宝{{#if(certResult.certType == 2)}}{{set(actionType=1)}}商家{{else}}{{set(actionType=1)}}个人实名认证正在审核中，<a
-        href="memberModule.setTarget.addQueryData.addQueryData"
-        target="_blank">点此查看</a>。
-{{elseif(certResult.certStatus == 3)}}    {{!失败}}
-                支付宝{{#if(certResult.certType == 2)}}商家{{else}}个人实名认证失败，您可以<a
-        href="memberModule.setTarget.addQueryData.addQueryData"
-        target="_blank">点击重新认证</a>。
-
-{{else}}    {{!繁体会员}}
-            {{#if(certResult.certStatus == 0)}}    {{!初始化}}
-                想卖宝贝，先进行个人<a href="memberModule.setTarget" target="_blank">淘宝实名认证或商家实名认证</a>吧。
-{{elseif(certResult.certStatus == 1)}}    {{!审核中}}
-                {{#if(certResult.certType == 2)}}您的商家实名认证，
-    {{#if(certResult.uploadType == 0)}}
-        正在审核中。
-    {{else}}
-        已选择"<span class="B">邮寄</span>"方式,如要改为"<span class="B">直接上传</span>",请<a
-            href="memberUploadModule.setTarget" target="_blank">点击重新提交</a>。
-    
+{{#if (a)}}
+    if a
 {{else}}
-    您的淘宝个人实名认证，
-    {{#if(certResult.uploadType == 0)}}
-        正在审核中。
+    {{#if (b)}}
+        elif b
     {{else}}
-        已选择"<span class="B">邮寄</span>"方式,如要改为"<span class="B">直接上传</span>",<a
-            href="memberUploadModule.setTarget" target="_blank">请点击重新提交</a>。
-    
-
-{{elseif(certResult.certStatus == 3)}}    {{!失败}}
-                {{#if(certResult.certType == 2)}}商家{{else}}个人 认证失败，您可以{{#if(certResult.certType == 2)}} <a
-        href="memberModule.setTarget" target="_blank">点击</a>{{else}}<a
-        href="memberModule.setTarget" target="_blank">点击</a> 重新补充资料完成认证。
-
-
-
-</div>
-
-
-
+        {{#if (c)}}
+            elif c
+        {{else}}
+            {{#if (d)}}
+                elif d
+            {{else}}
+                last el
+            {{/if}}
+        {{/if}}
+    {{/if}}
+{{/if}}
