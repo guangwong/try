@@ -1,0 +1,33 @@
+[
+    [
+        {
+            "type": "if",
+            "condition": {
+                "type": "references",
+                "id": "a",
+                "leader": "$"
+            }
+        },
+        "\n\n    1\n\n    ",
+        [
+            {
+                "type": "if",
+                "condition": {
+                    "type": "references",
+                    "id": "b",
+                    "leader": "$"
+                }
+            },
+            "\n        2\n    ",
+            {
+                "type": "else"
+            },
+            "\n        8\n    "
+        ],
+        "\n\n    3\n\n",
+        {
+            "type": "else"
+        },
+        "\n\n    4\n"
+    ]
+]
